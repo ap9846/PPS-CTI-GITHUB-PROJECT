@@ -1,0 +1,47 @@
+#include <stdio.h>
+int age;
+int avg;
+int f=1,num;
+int main(){
+    int no;
+    printf("1. CHECK WHETHER YOU ARE ELIGIBLE FOR VOTING OR NOT\n");
+     printf("2. CHECK WHETHER YOU HAVE BEEN PROMOTED OR NOT \n");
+      printf("3. CHECK THE FACTORIAL OF THE GIVEN NUMBER\n");
+      printf("CHOOSE ANY ONE::\n");
+      scanf("%d",&no);
+       printf(" THE OPTION YOU CHOOSE IS:%d\n",no);
+       switch(no){
+           case 1:
+           printf("ENTER YOUR AGE:\n");
+           scanf("%d",&age);
+           printf("YOUR AGE IS:%d\n",age);
+           if(age>=18){
+           printf("YOU ARE ELIGIBLE FOR VOTING");}
+           else{
+               printf("YOU ARE NOT ELIGIBLE FOR VOTING");}
+               break;
+               case 2:
+               printf("ENTER YOUR AVERAGE");
+               scanf("%d",&avg);
+                printf("YOUR AVERAGE MARKS IS:%d\n",avg);
+           if(avg>=45){
+           printf("YOU HAVE BEEN PROMOTED");}
+           else{
+               printf("YOU HAVE NOT BEEN PROMOTED");}
+               break;
+               case 3:
+               printf("ENTER NUMBER:\n");
+               scanf("%d",&num);
+               for (int n=1;n<=num;n++){
+                   f=f*n;
+               }printf("THE FACTORIAL OF %d IS %d",num,f);
+               break;
+               default:
+              printf("YOU ENTERED WRONG CHOICE::\n THANK YOU");
+                break;
+}
+ return 0;
+}
+               
+               
+           
