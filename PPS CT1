@@ -4,40 +4,40 @@ int avg;
 int f=1,num;
 int main(){
     int no;
-    printf("1. CHECK WHETHER YOU ARE ELIGIBLE FOR VOTING OR NOT\n");
-     printf("2. CHECK WHETHER YOU HAVE BEEN PROMOTED OR NOT \n");
-      printf("3. CHECK THE FACTORIAL OF THE GIVEN NUMBER\n");
-      printf("CHOOSE ANY ONE::\n");
+    printf("1. Check whether you are eligible for voting or not\n");
+     printf("2. Check whether you have been promoted or not \n");
+      printf("3. Check the factorial of given number\n");
+      printf("Choose any one::\n");
       scanf("%d",&no);
-       printf(" THE OPTION YOU CHOOSE IS:%d\n",no);
+       printf(" The option you choose is:%d\n",no);
        switch(no){
            case 1:
-           printf("ENTER YOUR AGE:\n");
+           printf("Enter your age:\n");
            scanf("%d",&age);
-           printf("YOUR AGE IS:%d\n",age);
+           printf("Your age is:%d\n",age);
            if(age>=18){
-           printf("YOU ARE ELIGIBLE FOR VOTING");}
+           printf("You are eligible for voting");}
            else{
-               printf("YOU ARE NOT ELIGIBLE FOR VOTING");}
+               printf("You are not eligible for voting");}
                break;
                case 2:
-               printf("ENTER YOUR AVERAGE");
+               printf("Enter your average");
                scanf("%d",&avg);
-                printf("YOUR AVERAGE MARKS IS:%d\n",avg);
+                printf("Your average marks is:%d\n",avg);
            if(avg>=45){
-           printf("YOU HAVE BEEN PROMOTED");}
+           printf("You have been promoted");}
            else{
-               printf("YOU HAVE NOT BEEN PROMOTED");}
+               printf("You have not been promoted");}
                break;
                case 3:
-               printf("ENTER NUMBER:\n");
+               printf("Enter number:\n");
                scanf("%d",&num);
                for (int n=1;n<=num;n++){
                    f=f*n;
-               }printf("THE FACTORIAL OF %d IS %d",num,f);
+               }printf("The factorial of %d is %d",num,f);
                break;
                default:
-              printf("YOU ENTERED WRONG CHOICE::\n THANK YOU");
+              printf("You entered wrong choice::\n Thank you");
                 break;
 }
  return 0;
